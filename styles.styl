@@ -1,0 +1,498 @@
+body 
+    padding 0
+    margin 0
+    overflow-x hidden
+    font-family 'Open Sans'
+    
+.left 
+    text-align left
+
+nav
+    width 100%
+    height 100px
+    background-image linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67))
+    z-index 1000
+    position fixed
+    #menu 
+        display none
+        width 30px
+        height auto
+        float right
+        margin-top 35px
+        margin-right 5em
+        opacity 0.5
+        z-index 1000
+    #logo 
+        display inline-block
+        margin-top 20px
+        margin-left 5em
+    #links 
+        float right
+        display inline-block
+        margin-top 10px
+        ul 
+            li
+                list-style none
+                text-decoration none
+                float left
+                margin 10px 20px
+                font-size 16px
+                font-family 'Open Sans'
+                font-weight normal
+                font-style normal
+                font-stretch normal
+                line-height normal
+                letter-spacing normal
+                color #000000                
+    #social
+        float right 
+        display inline-block
+        margin-top 20px
+        margin-left 30px
+        margin-right 80px
+        img 
+            margin 10px
+
+textBtn()
+        color #000000
+        font-family 'Open Sans'
+        font-size 14px
+        opacity 0.9
+        font-weight 400
+        font-style normal
+        font-stretch normal
+        line-height normal
+        letter-spacing normal
+        text-align center
+        text-decoration-line none
+        vertical-align middle
+        padding-top 2px
+
+.sabores
+    margin-bottom 30px
+.sabor 
+    float left
+    margin-right 10px
+    margin-top 2px
+    textBtn()
+
+.sabor-btn 
+    cursor pointer
+    padding 2px
+    float left
+    margin-right 15px
+    width 86px
+    height 20px
+    border-radius 11.5px
+    border solid 1px rgba(0, 0, 0, 0.14)
+    textBtn()
+    &:hover
+        background-color rgba(255, 0, 0, 0.14)
+
+section 
+    #first 
+        width 100%
+        height 700px
+        z-index 10
+        position relative
+        display block
+        .yogurt
+            display inline-block
+            position relative
+            top 10em
+            left 15%
+            float left
+            z-index 2
+        .description
+            position relative
+            top 15em
+            right 15%
+            float right 
+            width 45%
+            height 115px
+            display inline-block
+            .title1
+                font-family 'Open Sans'
+                font-size 3.0vw
+                font-weight 300
+                font-style normal
+                font-stretch normal
+                line-height normal
+                letter-spacing normal
+                color #78246d
+            .text1
+                font-family 'Open Sans'
+                font-size 1.3vw
+                font-weight 300
+                font-style normal
+                font-stretch normal
+                line-height normal
+                letter-spacing normal
+                color #000000
+        #circle
+            position absolute 
+            left 50%
+            z-index 100
+            top 680px
+            width 50px
+            height 50px
+            border-radius 50%
+            background-color #78246d
+            text-align center
+            vertical-align middle
+            img 
+                margin-top 12px
+
+    #first::after 
+        content ""
+        position absolute
+        width 100%
+        z-index -10
+        box-shadow 0 14px 44px 0 rgba(0, 0, 0, 0.09)
+        background-image linear-gradient(to bottom, #f9e6e6, #ebacac)
+        top 0
+        bottom 0
+        right 0
+        left 0
+        transform skew(0, 5deg)
+
+
+#comprar-btn
+    cursor pointer
+    padding 10px 40px
+    width 200px
+    text-align center
+    width 250px
+    height 40px
+    background-color #78246d
+    color white
+    font-family 'Open Sans'
+    font-size 14px
+    font-weight 300
+    border 0
+
+
+.sellos
+    margin-top 40px
+    margin-left 10px
+    img 
+        display inline-block
+        margin-right 20px
+
+#second
+    position relative
+    background-color white
+    padding 18% 20%
+    min-height 350px
+    display block
+    .subtitle
+        font-family: 'Open Sans';
+        font-size: 32px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 3.9px;
+        color: #6f2e6d;
+    .toLeft
+        float left
+        width 35%
+        height auto
+        display inline-block
+        .textBold
+            font-family 'Open Sans'
+            font-size 14px
+            font-weight bold
+            margin: 0
+        .textTiny
+            margin: 0
+            font-family 'Open Sans'
+            font-size 14px
+            font-weight 300
+
+    .toRight
+        float right
+        width 60%
+        height auto
+        display inline-block
+        table
+            width 100%
+            font-size 14px
+            font-weight 300
+            font-style normal
+            font-stretch normal
+            line-height 2.57
+            letter-spacing normal
+            text-align right
+            border-spacing: 0;
+            color #78246d
+            tr:nth-child(odd) 
+                background-color #f8f8f8
+            tr:nth-child(even) 
+                background-color #fafafa
+            td 
+                padding 0px 10px
+            
+#third
+    position 
+    width 100%
+    min-height 500px
+    background-image: url("assets/bg-familia-vitalinea.png");
+    background-repeat repeat
+    padding-top 3em
+    text-align center
+    #familia
+        font-family 'Open Sans'
+        font-size 44px
+        font-weight 300
+        font-style normal
+        text-align center
+        color #78246d
+    .products
+        display block
+        .item
+            display inline-block
+            margin-bottom 0
+            margin-right 2%
+            margin-left 2%
+            .name
+                text-align center
+                font-size 22px
+                font-weight 300
+                color #78246d
+
+footer 
+    background-color white
+    padding 20px 20px
+    #icon
+        display inline-block
+        margin auto 
+        vertical-align middle
+    .row
+        display inline-block
+        height auto
+
+    #terminos
+        display block
+        margin-left 0
+        font-size 12px
+        font-weight normal
+        ul 
+            margin-left -25px
+            li 
+                list-style none
+                text-decoration none
+                float left
+                a   
+                    cursor pointer
+                    text-decoration none
+                    color: #000000;
+                span 
+                    margin 0px 10px
+                    
+    #derechos
+        display block
+        padding-top 10px
+        margin-left 15px
+        font-size 12px
+        font-weight normal
+        color #000000
+
+#logoTiny
+    padding 20px 15px
+    float right
+    vertical-align middle
+    margin auto 
+
+#nv-fresa 
+    position absolute
+    top -50px
+    margin-left 150px
+    transform rotate(-50deg)
+    z-index 100
+
+#nv-blur-fresa
+    position absolute
+    width 40vw
+    top 0
+    right 10%
+    z-index 100
+
+#ft-yogurt-fresa 
+    position absolute 
+    top 500px
+    left 0
+    z-index 100
+
+#inf-fresa-1
+    position absolute 
+    top 920px
+    left 20px
+    z-index 100
+
+#inf-fresa-2
+    position absolute 
+    top 1280px
+    left 0
+    z-index 100
+
+#inf-fresa-3
+    position absolute 
+    top 1370px
+    left 200px
+    z-index 100
+
+#inf-fresa-4
+    position absolute 
+    top 1250px
+    right 0
+    z-index 100
+
+#inf-fresa-6
+    position absolute 
+    top 860px
+    right 0
+    z-index 100
+
+#inf-fresa-7
+    position absolute 
+    top 560px
+    right 0
+    z-index 100
+
+@media screen and (max-width: 1024px)
+    .title1
+        font-size 16pt !important
+    .text1
+        font-size 11pt !important
+    #social
+        display none !important
+    #links 
+        ul li
+            font-size 12pt !important
+            margin 10px 10px !important
+    .yogurt
+        left 8% !important
+    .description
+        right 8% !important
+        width 50% !important
+    #inf-fresa-1
+        width 20
+    
+    #inf-fresa-2
+    #inf-fresa-4
+    #inf-fresa-3
+        width 15vw
+        height auto
+
+
+@media screen and (max-width: 800px) 
+    #ft-yogurt-fresa
+    #inf-fresa-7
+    #inf-fresa-1
+    #inf-fresa-3
+    #inf-fresa-4
+    #links
+    #social
+        display none !important
+    #menu
+        display inline-block !important
+    #nv-fresa
+        top 100px
+        margin-left -80px
+    #nv-blur-fresa 
+        right 0
+    #first
+        height 1200px !important
+
+    #first::after
+        width 100% !important
+    #inf-fresa-6
+        top 1300px
+    #second 
+        min-height 700px !important 
+    
+
+    .yogurt
+        width 100% !important
+        display block !important
+        left 0 !important
+        text-align center !important
+        margin auto
+        
+    .description 
+        width 90% !important
+        display block !important
+        right 15px !important
+        margin-top -150px
+        margin-right 0 !important
+        padding 10px
+
+    .sellos
+        width 100% !important
+        display block !important   
+        text-align center
+
+    .yogurt 
+        img
+            width 50vw
+            height auto
+    
+    #comprar-btn
+        width 100%
+    #circle
+        top 98% !important
+    .toLeft, .toRight
+        width 100% !important
+        display block !important
+        margin-bottom 20px
+
+    .item
+        img 
+            width 30vw
+            height auto
+    
+    #third
+        margin auto
+        text-align center
+        #familia
+            font-size 20pt
+
+@media screen and (max-width: 700px)
+    #logoTiny
+        padding 15px 10px
+        float right
+        vertical-align middle
+        margin auto 
+    #terminos
+        margin-left 15% !important
+        ul 
+            li
+                float none
+    footer 
+        .row
+            display block !important
+            text-align center
+
+
+@media screen and (max-width: 500px)
+    #inf-fresa-6 
+        display none
+    
+    #second 
+        height 900px !important 
+    
+    .sabores
+        a
+            font-size 3.5vw !important
+        .sabor-btn
+            width 65px
+            height auto
+            margin-right 1%
+@media screen and (max-width: 450px)
+    #first
+        height 900px !important
+
+@media screen and (max-width: 390px)
+    #second 
+        height 1100px !important 
